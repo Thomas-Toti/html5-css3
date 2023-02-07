@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        .espaco {
+            position: relative; /*sobrepoe elemento*/
+        }
+
+        .astronauta {
+            position: absolute; /*sobrepoe elemento*/
+            width: 30%;
+            height: 50%;
+            top: 50%; /*centraliza o elemento*/
+            left: 50%; /*centraliza o elemento*/
+            transform: translate(-50%, -50%); /*centraliza o elemento*/
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <img class="espaco" src="imagens/espaco.jpg" alt="imagem do espaco">
+
+        
+        <img class="astronauta" src="imagens/astronauta.png" alt="imagem do astronauta">
+
+    </div>
+
+</body>
+</html>
