@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+    <!--Usar metodo POST para nao mostra a senha ou dados de usuario do formulario na URL-->
+    <!--Autocomplete: Liga o auto-completar dados-->
+    
+        <p>
+            <label for="iusu">Usuario: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuario" autocomplete="username"> 
+            <!--required: "Campo obrigatorio!" Mostra ao usuario campo vazio, sem preenchimento e nao pode enviar o formulario-->
+            <!--minlength e maxlength: minimo e maximo de caracteres exigidos-->
+            <!--size: tamanho da caixa. 10 letras/numeros...-->
+            <!--Placeholder: texto escrito dentro do campo para dar dica ao usuario-->
+            <!--autocomplete no input: sugere completar nome, senhas...-->
+
+
+        </p>
+        
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="Minimo 8 letras" autocomplete="current-password"> 
+            <!--required: "Campo obrigatorio!" Mostra ao usuario campo vazio, sem preenchimento e nao pode enviar o formulario-->
+            <!--minlength e maxlength: minimo e maximo de caracteres exigidos-->
+            <!--size: tamanho da caixa. 8 letras/numeros...-->
+            <!--Placeholder: texto escrito dentro do campo para dar dica ao usuario-->  
+            <!--autocomplete no input: sugere completar nome, senhas...-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>

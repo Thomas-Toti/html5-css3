@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+
+    <!--Action: envia os dados para o arquivo/linguagem PHP ou outra desejada--> 
+    <!--autocomplete off: desliga o preenchimento automatico na insercao dos dados-->
+    <form action="cadastro.php" autocomplete="off">
+        
+        <p><label for="inome">Nome:</label> <!--Melhora as pesquisas no Google -> Label: etiqueta para relacionar o "Nome" com os dados inseridos (campo do nome de usuario)-->
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome: </label> <!--Melhora as pesquisas no Google -> Label: etiqueta para relacionar o "Nome" com os dados inseridos (campo do nome de usuario)-->
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p> <!--Botao de enviar os dados-->
+    </form>
+
+</body>
+</html>
